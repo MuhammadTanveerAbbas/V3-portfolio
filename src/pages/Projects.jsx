@@ -5,7 +5,7 @@ const projects = [
     "project-image-url": "/icon-1.png",
     "project-name": "Aurielle Jewellary",
     "project-desc": "GSAP + React + Tailwind CSS ",
-    link: "https://aurielle-jewellary.vercel.app/",
+    link: "https://aurielle-jewellery.vercel.app/",
   },
   {
     "project-image-url": "/icon-2.png",
