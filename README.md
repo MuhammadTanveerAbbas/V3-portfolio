@@ -2,7 +2,7 @@
 
 <br/>
 
-<h1 align="center">V2 Portfolio Website 😎</h1>
+<h1 align="center">V3 Portfolio Website 😎</h1>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" height="40" alt="Vite logo" />
