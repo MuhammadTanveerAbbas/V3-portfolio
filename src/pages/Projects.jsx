@@ -2,16 +2,16 @@ import { useState } from "react";
 
 const PROJECTS = [
   {
-    imageUrl: "/icon-1.png",
-    name: "Aurielle Jewellary",
-    description: "GSAP + React + Tailwind CSS",
-    link: "https://aurielle-jewellery.vercel.app/",
+    imageUrl: "/icon-1.jpg",
+    name: "Layers Editor",
+    description: "GSAP + Next JS + Tailwind CSS",
+    link: "https://layers-editor-landing-page.vercel.app/",
   },
   {
-    imageUrl: "/icon-2.png",
-    name: "Splyt Drinks",
-    description: "GSAP + React + Tailwind CSS",
-    link: "https://splyt-awwwards-website.vercel.app/",
+    imageUrl: "/icon-2.jpg",
+    name: "Summarizer AI",
+    description: "React + Typescript + Tailwind CSS",
+    link: "https://ai-summarizer-gpt.vercel.app/",
   },
   {
     imageUrl: "/icon-3.png",
