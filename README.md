@@ -63,7 +63,7 @@ A polished, modern portfolio that:
 
 ### 🛠️ Technology Used
 
-React.js • Tailwind CSS • Vite • JavaScript • HTML • CSS
+React.js • Tailwind CSS • Vite
 
 ---
 
