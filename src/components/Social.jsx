@@ -1,9 +1,4 @@
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaInstagram,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaLinkedinIn, FaGithub, FaXTwitter } from "react-icons/fa6";
 import configData from "../data/config.json";
 
 export default function Social() {
@@ -22,7 +17,6 @@ export default function Social() {
               const iconMap = {
                 FaLinkedinIn,
                 FaGithub,
-                FaInstagram,
                 FaXTwitter,
               };
               const IconComponent = iconMap[socialLink.icon];

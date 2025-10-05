@@ -78,7 +78,7 @@ export default function Profile() {
             >
               <button
                 type="button"
-                className="inline-flex items-center gap-x-1 px-3 py-1.5 text-xs sm:text-sm font-medium text-white bg-black border border-black rounded-lg relative overflow-hidden shadow-md before:absolute before:top-0 before:right-0 before:h-10 before:w-5 before:translate-x-10 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-36"
+                className="inline-flex items-center gap-x-1 px-3 py-1.5 text-sm font-medium text-white bg-black border border-black rounded-md relative overflow-hidden shadow-md before:absolute before:top-0 before:right-0 before:h-10 before:w-5 before:translate-x-10 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-36"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export default function Profile() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-4 h-4 sm:w-5 sm:h-5"
+                  className="w-4 h-4"
                 >
                   <path
                     strokeLinecap="round"

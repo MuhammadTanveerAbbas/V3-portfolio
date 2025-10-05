@@ -10,7 +10,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold text-center">
           Let&rsquo;s work together.
         </h2>
-        <p className="text-md font-normal text-gray-500 text-center px-4">
+        <p className="text-sm md:text-lg text-gray-500 mt-2">
           Crafting engaging user experiences
         </p>
       </div>
