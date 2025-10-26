@@ -8,9 +8,9 @@
   "hireMeLink": "https://www.linkedin.com/in/muhammadtanveerabbas/",
   "projects": [
     {
-      "project-image-url": "/icon-1.png",
-      "project-name": "Aurielle Jewellery",
-      "project-desc": "GSAP + React + Tailwind CSS",
+      "project-image-url": "/icon-1.jpg",
+      "project-name": "Layers Editor",
+      "project-desc": "GSAP + Next JS + Tailwind CSS",
       "link": "https://aurielle-jewellary.vercel.app/"
     }
   ],
