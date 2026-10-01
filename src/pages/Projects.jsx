@@ -45,17 +45,15 @@ const createArrowIcon = (isHovered) => (
 );
 
 const ProjectImage = ({ imageUrl, name }) => (
-  <div className="rounded-full overflow-hidden items-center justify-center border border-gray-200 hidden md:block">
-    <div className="w-16 h-16 rounded-full overflow-hidden">
-      <img className="w-full h-full object-cover" src={imageUrl} alt={name} />
-    </div>
+  <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border border-gray-200 hidden md:block">
+    <img className="w-full h-full object-cover" src={imageUrl} alt={name} />
   </div>
 );
 
 const ProjectContent = ({ name, description }) => (
   <div className="flex flex-col justify-center">
-    <h1 className="font-medium text-lg text-gray-900">{name}</h1>
-    <p className="text-gray-500 text-md">{description}</p>
+    <h1 className="font-medium text-base sm:text-lg text-gray-900">{name}</h1>
+    <p className="text-gray-500 text-sm">{description}</p>
   </div>
 );
 
@@ -72,7 +70,7 @@ const ProjectCard = ({ project, isHovered, onMouseEnter, onMouseLeave }) => (
     rel="noopener noreferrer"
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}
-    className="drop-shadow-md bg-[#f3f4f6] rounded-lg px-5 py-3 gap-x-3 flex flex-col md:flex-none md:flex-row hover:-translate-y-1 hover:scale-100 duration-300 transition ease-in-out delay-150 hover:shadow-sm border border-gray-200 hover:border-gray-300"
+    className="drop-shadow-md bg-[#f3f4f6] rounded-lg px-4 sm:px-5 py-3 gap-x-3 flex flex-row items-center hover:-translate-y-1 duration-300 transition ease-in-out delay-150 hover:shadow-sm border border-gray-200 hover:border-gray-300"
   >
     <ProjectImage imageUrl={project.imageUrl} name={project.name} />
     <ProjectContent
@@ -84,7 +82,7 @@ const ProjectCard = ({ project, isHovered, onMouseEnter, onMouseLeave }) => (
 
 const SectionHeader = () => (
   <div className="flex items-center justify-between mb-5">
-    <div className="font-medium text-lg flex items-center gap-x-2">
+    <div className="font-medium text-sm tracking-tight text-gray-500 uppercase flex items-center gap-x-2">
       <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
       Projects
     </div>
@@ -99,7 +97,7 @@ export default function Card() {
 
   return (
     <div className="px-2">
-      <div className="flex flex-col bg-white rounded-lg px-5 py-5 max-w-6xl mx-auto">
+      <div className="flex flex-col bg-white rounded-lg px-4 sm:px-5 py-5 max-w-6xl mx-auto">
         <SectionHeader />
         <div className="flex flex-col gap-6">
           {PROJECTS.map((project, index) => (

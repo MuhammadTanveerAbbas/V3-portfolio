@@ -12,9 +12,8 @@ export default function Profile() {
         ? "bg-[#d0fadf] text-[#109d5c]"
         : "bg-[#ff9d9d] text-[#f74d4d]"
     }
-    flex items-center gap-1 text-[9px] sm:text-[10px] md:text-sm
-    font-semibold uppercase rounded-full
-    px-2 py-0.5 animate-fade-in
+    flex items-center gap-1 text-[10px] font-semibold uppercase rounded-full
+    px-2.5 py-1 animate-fade-in
   `.trim();
 
   const workStatusDotClass = `
@@ -48,7 +47,7 @@ export default function Profile() {
       `}</style>
 
       <div className="flex items-center justify-between px-3 sm:px-5 pt-4 sm:pt-5">
-        <div className="text-sm sm:text-base font-medium flex items-center gap-x-1.5 sm:gap-x-2">
+        <div className="text-sm sm:text-base font-medium tracking-tight flex items-center gap-x-1.5 sm:gap-x-2">
           <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gray-400 rounded-full" />
           {configData.job}
         </div>
@@ -62,11 +61,11 @@ export default function Profile() {
 
       <div className="px-3 sm:px-5 pb-5 flex flex-col-reverse md:flex-row md:items-center md:justify-between pt-1.5 sm:pt-2 md:pt-3">
         <div className="flex flex-col gap-y-1 md:gap-y-2">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center md:text-left tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center md:text-left tracking-tighter leading-tight">
             I&rsquo;m {configData.name}
           </h1>
 
-          <p className="text-sm sm:text-base text-gray-500 leading-snug max-w-xl mx-auto md:mx-0">
+          <p className="text-sm sm:text-base text-gray-400 leading-relaxed max-w-xl mx-auto md:mx-0 tracking-tight">
             {configData.desc}
           </p>
 
@@ -78,23 +77,12 @@ export default function Profile() {
             >
               <button
                 type="button"
-                className="inline-flex items-center gap-x-1 px-3 py-1.5 text-sm font-medium text-white bg-black border border-black rounded-md relative overflow-hidden shadow-md before:absolute before:top-0 before:right-0 before:h-10 before:w-5 before:translate-x-10 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-36"
+                className="inline-flex items-center gap-x-1.5 px-4 py-2 text-sm font-medium text-white bg-black border border-black rounded-lg hover:bg-gray-900 transition-colors duration-150"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-4 h-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
+                  <path fillRule="evenodd" d="M4.804 21.644A6.707 6.707 0 006 21.75a6.721 6.721 0 003.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 01-.814 1.686.75.75 0 00.44 1.223 4.52 4.52 0 001.957-.405z" clipRule="evenodd" />
                 </svg>
-                Hire Me
+                Let&rsquo;s Talk
               </button>
             </a>
             <CopyEmailButton />

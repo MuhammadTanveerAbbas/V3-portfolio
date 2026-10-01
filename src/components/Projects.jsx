@@ -3,14 +3,12 @@ import { getConfigData } from "../data/configReader";
 import { useNavigate } from "react-router-dom";
 
 const ProjectImage = ({ imageUrl, projectName }) => (
-  <div className="rounded-full overflow-hidden items-center justify-center border border-gray-100 group-hover:border-gray-200 transition-colors duration-200 hidden md:flex md:items-center md:justify-center">
-    <div className="w-[52px] h-[52px] rounded-full overflow-hidden">
-      <img
-        className="w-full h-full object-cover"
-        src={imageUrl}
-        alt={projectName}
-      />
-    </div>
+  <div className="w-[52px] h-[52px] rounded-full overflow-hidden flex-shrink-0 border border-gray-100 group-hover:border-gray-200 transition-colors duration-200 hidden md:flex">
+    <img
+      className="w-full h-full object-cover"
+      src={imageUrl}
+      alt={projectName}
+    />
   </div>
 );
 
@@ -41,14 +39,14 @@ const ProjectCard = ({ project }) => (
 
 const SectionHeader = ({ onViewAll }) => (
   <div className="flex items-center justify-between mb-5">
-    <div className="font-medium text-lg flex items-center gap-x-2">
+    <div className="font-medium text-sm tracking-tight text-gray-500 uppercase flex items-center gap-x-2">
       <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
       Projects
     </div>
     <button
       type="button"
       onClick={onViewAll}
-      className="text-gray-900 bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
+      className="text-gray-700 bg-white border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all duration-200 font-medium rounded-lg text-xs tracking-tight px-3 py-1.5 inline-flex items-center"
     >
       View All
     </button>

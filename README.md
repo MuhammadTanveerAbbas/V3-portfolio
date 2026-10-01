@@ -2,6 +2,8 @@
 
 <br/>
 
+<img src="src/assets/app-icon.webp" alt="Site Logo" width="80" />
+
 <h1 align="center">V3 Minimal Portfolio Website 😎</h1>
 
 <div align="center">

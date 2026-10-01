@@ -6,11 +6,11 @@ export default function Home() {
     <>
       <Profile />
       <Projects />
-      <div className="flex flex-col items-center justify-center py-2">
-        <h2 className="text-3xl font-semibold text-center">
+      <div className="flex flex-col items-center justify-center py-4 px-4">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tighter text-center">
           Let&rsquo;s work together.
         </h2>
-        <p className="text-sm md:text-lg text-gray-500 mt-2">
+        <p className="text-sm text-gray-400 mt-1.5 tracking-tight">
           Crafting engaging user experiences
         </p>
       </div>
